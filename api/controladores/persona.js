@@ -105,7 +105,6 @@ async function obtenerPersona( req, res ){
 
     var personaId = req.params.id; // de la URL viene
     var update = req.body;
-    console.log(personaId);
     
     try {
         const personaEncontrada = await Persona.find({ "_id": personaId });
